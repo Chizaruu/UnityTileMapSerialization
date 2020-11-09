@@ -48,13 +48,20 @@ public class SceneDataSystem
         }
     }
 
-    public static void Delete(string folderName)
+    public static void Delete()
     {
         string path = Path.Combine(Application.persistentDataPath, "Saves");
-        path = Path.Combine(path, folderName);
 
         DirectoryInfo directory = new DirectoryInfo(path);
-        directory.Delete(true);
+
+        if(Directory.Exists(path)){
+            directory.Delete(true);
+            Debug.Log("Save files deleted.");
+        }
+        else
+        {
+            Debug.LogError("Save files not found.");
+        }
     }
 }
 

@@ -47,8 +47,11 @@ public class SaveManager : MonoBehaviour
     public void Load()
     {
         sceneProfile = SceneDataSystem.Load("sceneData", "Scene");
-        sceneData.sceneLoaded = true;
-        LoadScene();
+        if(sceneProfile != null)
+        {
+            sceneData.sceneLoaded = true;
+            LoadScene();
+        }
     }
 
     public void LoadScene()
@@ -65,5 +68,10 @@ public class SaveManager : MonoBehaviour
 
             SceneManager.LoadScene(sceneProfile.scene);
         }  
+    }
+
+    public void Delete()
+    {
+        SceneDataSystem.Delete();
     }
 }
