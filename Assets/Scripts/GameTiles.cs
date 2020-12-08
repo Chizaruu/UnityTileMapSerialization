@@ -33,7 +33,7 @@ public class GameTiles : MonoBehaviour {
             {
 				localPlace = lPos,
                 gridLocation = tileMap.CellToWorld(lPos),
-				tileBase = tileMap.GetTile(lPos),
+				tileBase = tileMap.GetTile(lPos).name,
 				isVisible = false,
 				isExplored = false,
 			};
@@ -80,7 +80,7 @@ public class GameTiles : MonoBehaviour {
 
 			for(int i = 0; i <= tileAsset.Length; i++)
 			{
-				if(tileAsset[i] == tile.tileBase)
+				if(tileAsset[i].name == tile.tileBase)
 				{
 					tileMap.SetTile(tile.localPlace, tileAsset[i]);
 					i = tileAsset.Length;

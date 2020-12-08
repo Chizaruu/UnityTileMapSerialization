@@ -7,7 +7,7 @@ public class WorldTile {
 
     public Vector3 gridLocation;
 
-    public TileBase tileBase;
+    public string tileBase;
 
     public bool isExplored;
 
