@@ -62,7 +62,7 @@ namespace UTMS.Map
                     //If the tileasset name matches the tile name
                     if(tileAsset[i].name == tile.tileBase)
                     {
-                        //pos is a hotfix since Sirenix.OdinSerializer doesn't support Vector3Int for some reason
+                        //pos is a hotfix since Github Source Code Sirenix.OdinSerializer doesn't support Vector3Int for some reason
                         Vector3Int pos = new Vector3Int((int)tile.gridLocation.x, (int)tile.gridLocation.y, (int)tile.gridLocation.z); //Create a new vector3int with the x, y, and z of the tile.gridLocation
                         map.SetTile(pos, tileAsset[i]); //Set the tile at the position
                         i = tileAsset.Length; //Break out of the loop
