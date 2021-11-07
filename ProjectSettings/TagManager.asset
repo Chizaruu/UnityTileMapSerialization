@@ -44,3 +44,6 @@ TagManager:
   - name: Tile
     uniqueID: 3613533141
     locked: 0
+  - name: UI
+    uniqueID: 2250218013
+    locked: 0

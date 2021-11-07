@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirenix.OdinSerializer", "Sirenix.OdinSerializer.csproj", "{fb84f787-7c46-28ba-a5c2-d2cfc445f5af}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{fdf25ac1-8f5d-76e9-320e-426f005dce49}"
 EndProject
 Global
@@ -8,6 +10,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{fb84f787-7c46-28ba-a5c2-d2cfc445f5af}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{fb84f787-7c46-28ba-a5c2-d2cfc445f5af}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{fdf25ac1-8f5d-76e9-320e-426f005dce49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{fdf25ac1-8f5d-76e9-320e-426f005dce49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
